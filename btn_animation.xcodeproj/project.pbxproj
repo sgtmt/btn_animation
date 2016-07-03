@@ -12,6 +12,12 @@
 		07E757581D280DA000A3ED56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E757561D280DA000A3ED56 /* Main.storyboard */; };
 		07E7575A1D280DA000A3ED56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E757591D280DA000A3ED56 /* Assets.xcassets */; };
 		07E7575D1D280DA000A3ED56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E7575B1D280DA000A3ED56 /* LaunchScreen.storyboard */; };
+		07E757651D280E0D00A3ED56 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 07E757641D280E0D00A3ED56 /* MyScene.sks */; };
+		07E757681D280E7400A3ED56 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 07E757661D280E7400A3ED56 /* MyParticle.sks */; };
+		07E757691D280E7400A3ED56 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 07E757671D280E7400A3ED56 /* spark.png */; };
+		07E7576B1D280F5E00A3ED56 /* sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7576A1D280F5E00A3ED56 /* sprite.swift */; };
+		07E7576D1D28E10900A3ED56 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7576C1D28E10900A3ED56 /* SecondViewController.swift */; };
+		07E7576F1D297DC700A3ED56 /* SrdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7576E1D297DC700A3ED56 /* SrdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		07E757591D280DA000A3ED56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E7575C1D280DA000A3ED56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E7575E1D280DA000A3ED56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E757641D280E0D00A3ED56 /* MyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MyScene.sks; path = ../MyScene.sks; sourceTree = "<group>"; };
+		07E757661D280E7400A3ED56 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MyParticle.sks; path = ../MyParticle.sks; sourceTree = "<group>"; };
+		07E757671D280E7400A3ED56 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = ../spark.png; sourceTree = "<group>"; };
+		07E7576A1D280F5E00A3ED56 /* sprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = sprite.swift; path = ../sprite.swift; sourceTree = "<group>"; };
+		07E7576C1D28E10900A3ED56 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		07E7576E1D297DC700A3ED56 /* SrdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SrdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +66,18 @@
 		07E757511D280DA000A3ED56 /* btn_animation */ = {
 			isa = PBXGroup;
 			children = (
+				07E757641D280E0D00A3ED56 /* MyScene.sks */,
+				07E757671D280E7400A3ED56 /* spark.png */,
+				07E757661D280E7400A3ED56 /* MyParticle.sks */,
 				07E757521D280DA000A3ED56 /* AppDelegate.swift */,
+				07E7576A1D280F5E00A3ED56 /* sprite.swift */,
 				07E757541D280DA000A3ED56 /* ViewController.swift */,
 				07E757561D280DA000A3ED56 /* Main.storyboard */,
 				07E757591D280DA000A3ED56 /* Assets.xcassets */,
 				07E7575B1D280DA000A3ED56 /* LaunchScreen.storyboard */,
 				07E7575E1D280DA000A3ED56 /* Info.plist */,
+				07E7576C1D28E10900A3ED56 /* SecondViewController.swift */,
+				07E7576E1D297DC700A3ED56 /* SrdViewController.swift */,
 			);
 			path = btn_animation;
 			sourceTree = "<group>";
@@ -123,8 +141,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E7575D1D280DA000A3ED56 /* LaunchScreen.storyboard in Resources */,
+				07E757691D280E7400A3ED56 /* spark.png in Resources */,
 				07E7575A1D280DA000A3ED56 /* Assets.xcassets in Resources */,
+				07E757651D280E0D00A3ED56 /* MyScene.sks in Resources */,
 				07E757581D280DA000A3ED56 /* Main.storyboard in Resources */,
+				07E757681D280E7400A3ED56 /* MyParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E7576D1D28E10900A3ED56 /* SecondViewController.swift in Sources */,
+				07E7576F1D297DC700A3ED56 /* SrdViewController.swift in Sources */,
 				07E757551D280DA000A3ED56 /* ViewController.swift in Sources */,
+				07E7576B1D280F5E00A3ED56 /* sprite.swift in Sources */,
 				07E757531D280DA000A3ED56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
