@@ -24,7 +24,7 @@
                                         <rect key="frame" x="99" y="104" width="108" height="30"/>
                                         <state key="normal" title="Button" backgroundImage="spark.png"/>
                                         <connections>
-                                            <segue destination="U3o-WB-xsa" kind="show" id="cdY-cb-r4h"/>
+                                            <segue destination="yEU-cH-3t2" kind="show" id="rrP-TF-bBH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIC-CS-09j">
@@ -44,7 +44,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3P0-xr-eSy"/>
+                    <navigationItem key="navigationItem" id="3P0-xr-eSy">
+                        <barButtonItem key="rightBarButtonItem" image="spark.png" id="fEv-le-YeL">
+                            <connections>
+                                <segue destination="fFX-9z-P8x" kind="show" id="LdR-7M-kXB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -58,7 +64,137 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="723" y="328"/>
+            <point key="canvasLocation" x="594" y="264"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gqd-CH-gev">
+            <objects>
+                <viewController id="yEU-cH-3t2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kz0-HF-rzr"/>
+                        <viewControllerLayoutGuide type="bottom" id="nyK-lS-VaG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bmV-FU-v4T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46K-bV-eZ5">
+                                <rect key="frame" x="149" y="65" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgw-0a-fhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="594" y="-438"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aRZ-07-sKs">
+            <objects>
+                <viewController id="fFX-9z-P8x" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rs4-EK-hkq"/>
+                        <viewControllerLayoutGuide type="bottom" id="pnP-c4-cFc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rtQ-eT-f3H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGX-gK-AvV">
+                                <rect key="frame" x="93" y="141" width="135" height="30"/>
+                                <state key="normal" title="このあぷりについて"/>
+                                <connections>
+                                    <segue destination="gR1-d6-LPj" kind="show" id="mCW-55-whf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crM-sV-LHo">
+                                <rect key="frame" x="130" y="247" width="60" height="30"/>
+                                <state key="normal" title="使用素材"/>
+                                <connections>
+                                    <segue destination="Cd2-vc-jjw" kind="show" id="jV6-wN-gZJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BKY-Pt-CoN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016" y="-51"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xwc-fP-cGJ">
+            <objects>
+                <viewController id="gR1-d6-LPj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tgk-qo-7gu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xfg-sI-jC1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G59-Rr-HQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="このアプリについて" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSx-f4-yPv">
+                                <rect key="frame" x="84" y="78" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ncb-Bl-v4V">
+                                <rect key="frame" x="40" y="149" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCB-wC-4EK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445" y="-499"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hAI-Bd-gks">
+            <objects>
+                <viewController id="Cd2-vc-jjw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hfx-Az-EfY"/>
+                        <viewControllerLayoutGuide type="bottom" id="rSw-4f-jnt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cYc-em-ZUJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rRv-Vc-fnE">
+                                <rect key="frame" x="45" y="198" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用素材" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzO-Pv-QC6">
+                                <rect key="frame" x="113" y="82" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6x0-uf-oMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445" y="140"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="394-L5-qQC">
@@ -69,7 +205,7 @@
                         <viewControllerLayoutGuide type="bottom" id="RqC-DG-jj6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jAz-wQ-pwA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -77,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flG-UL-AW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1130" y="335"/>
+            <point key="canvasLocation" x="996" y="787"/>
         </scene>
         <!--Srd View Controller-->
         <scene sceneID="ylH-op-bvs">
@@ -94,7 +230,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfk-JQ-8cu">
                                 <rect key="frame" x="65" y="65" width="191" height="21"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="このアプリについて">
+                                    <fragment content="使い方">
                                         <attributes>
                                             <color key="NSColor" red="0.16776083465141858" green="0.28363358491205509" blue="0.88041923415492962" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="20" name="HiraginoSans-W3"/>
@@ -132,12 +268,11 @@ err
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csE-eC-CWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1130" y="976"/>
+            <point key="canvasLocation" x="594" y="1002"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D9K-qn-c7B">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="teX-Z8-UD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Dnu-Jv-Za2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -152,6 +287,7 @@ err
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="G51-6H-frn"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="teX-Z8-UD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="187" y="264"/>
         </scene>
